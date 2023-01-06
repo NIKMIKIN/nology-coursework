@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+nav,
+nav * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+nav {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 100%;
+    font-size: 1.5em;
+    justify-content: space-evenly;
+}
+#title {
+    background-color: green;
+    width: 15%;
+    height: 100%;
+}
+#profileTab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+#links {
+    width: 100%;
+}
+a {
+    width: 25%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+}
+#filter {
+    font-size: 30px;
+}
+#profile {
+    font-size: 30px;
+}
+#profile2 {
+    margin-right: 24px;
+}
+.searchbar {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.container {
+    display: flex;
+    border: 2px solid black;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.cards > span {
+    display: flex;
+    border: 2px solid black;
+    font-size: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.cards {
+    margin-top: 3.5vh;
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+    align-content: space-between;
+    height: 50vh;
+    width: 20vw;
+    margin-left: .25vw;
+    margin-right: .25vw;
+    
+}
+
+.empty {
+    color: white;
+}
