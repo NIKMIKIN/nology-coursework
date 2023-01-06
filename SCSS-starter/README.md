@@ -1,5 +1,5 @@
 ### Description
-1. What the project does
+1. What the project does: Displays 3 music genres with descriptions and buttons
 2. Requirements: To implement SCSS with HTML/CSS
 3. How to use it: run with any ide
 4. Technologies used: HTML, CSS, SCSS
