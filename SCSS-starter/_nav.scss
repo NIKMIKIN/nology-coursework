@@ -1,0 +1,12 @@
+.nav {
+    background-color: $primary-color;
+    ul {
+        margin: 0;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
