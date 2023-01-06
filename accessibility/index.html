@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>accessibility</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>Form</header>
+    <main>
+        <div class="container">
+            <form>
+                <div tabindex="3"class="row">
+                    <label class="box"for="fName">Full Name</label>
+                    <input type="text" name="fName">
+                </div>
+                <div class="column">
+                    <div tabindex="2"class="column1">
+                        <label class="box"for="bDate">Birth Date</label>
+                        <input type="date" name="bDate" id="bDate">
+                    </div>
+                    <div tabindex="1"class="column2">
+                        <label>
+                            <h1>Are you a U.S. citizen? </h1>
+                            <input type="checkbox" id="checkb"checked name="citizen">
+                            
+                        </label>
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
