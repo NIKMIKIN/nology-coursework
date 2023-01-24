@@ -1,0 +1,668 @@
+Testing log
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 08:01:37] "[35m[1mGET /api/get_enclosure?q=1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /api/enclosure [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 71, in create_room
+    cursor.execute(INSERT_ENCLOSURE, (enclosure_name,))
+psycopg2.errors.UndefinedColumn: column "enclosure_id" does not exist
+LINE 1: ...res (enclosure_name) VALUES ('mammals') RETURNING enclosure_...
+                                                             ^
+
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 08:10:29] "[35m[1mPOST /api/enclosure HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/enclosure [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 70, in create_room
+    cursor.execute(CREATE_ENCLOSURE_TABLE)
+psycopg2.errors.InFailedSqlTransaction: current transaction is aborted, commands ignored until end of transaction block
+
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 08:10:41] "[35m[1mPOST /api/enclosure HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /api/enclosure [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 71, in create_room
+    cursor.execute(INSERT_ENCLOSURE, (enclosure_name,))
+psycopg2.errors.UndefinedColumn: column "enclosure_id" does not exist
+LINE 1: ...res (enclosure_name) VALUES ('mammals') RETURNING enclosure_...
+                                                             ^
+
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 09:46:06] "[35m[1mPOST /api/enclosure HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /api/enclosure [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 73, in create_room
+    cursor.execute(INSERT_ENCLOSURE, (enclosure_name,))
+psycopg2.errors.UndefinedColumn: column "enclosure_id" does not exist
+LINE 1: ...res (enclosure_name) VALUES ('mammals') RETURNING enclosure_...
+                                                             ^
+
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 09:46:30] "[35m[1mPOST /api/enclosure HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:INSERT INTO enclosures (enclosure_name) VALUES (%s) RETURNING id;
+ERROR:app:Exception on /api/enclosure [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 77, in create_room
+    room_id = cursor.fetchone()[0]
+psycopg2.InterfaceError: cursor already closed
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 09:48:42] "[35m[1mPOST /api/enclosure HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:INSERT INTO enclosures (enclosure_name) VALUES (%s) RETURNING id;
+ERROR:app:Exception on /api/enclosure [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 77, in create_room
+    room_id = cursor.fetchone()[1]
+psycopg2.InterfaceError: cursor already closed
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 09:49:03] "[35m[1mPOST /api/enclosure HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:INSERT INTO enclosures (enclosure_name) VALUES (%s) RETURNING id;
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 09:49:59] "[35m[1mPOST /api/enclosure HTTP/1.1[0m" 201 -
+INFO:root:INSERT INTO enclosures (enclosure_name) VALUES (%s) RETURNING id;
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 10:17:35] "[35m[1mPOST /api/enclosure HTTP/1.1[0m" 201 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 10:36:36] "[31m[1mGET /api/enclosure?12 HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 10:36:39] "[31m[1mGET /api/enclosure?12=12 HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 10:36:43] "[31m[1mGET /api/enclosure?=12 HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 10:36:46] "[31m[1mGET /api/enclosure?1= HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 10:36:55] "[31m[1mGET /api/enclosure?=mammals HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 10:36:59] "[31m[1mGET /api/enclosure?1= HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:04:43] "[31m[1mGET /api/enclosure?12= HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:04:48] "[31m[1mGET /api/enclosure?=12 HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:04:52] "[31m[1mGET /api/enclosure?=1 HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:04:54] "[31m[1mGET /api/enclosure?1=1 HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:04:59] "[31m[1mGET /api/enclosure?1=mammals HTTP/1.1[0m" 405 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:05:26] "[35m[1mGET /api/get_enclosure?1= HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:05:39] "[35m[1mGET /api/get_enclosure?=1 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:05:42] "[35m[1mGET /api/get_enclosure?=1 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:05:42] "[35m[1mGET /api/get_enclosure?=1 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:05:47] "[35m[1mGET /api/get_enclosure?1=1 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:05:50] "[35m[1mGET /api/get_enclosure?1=12 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:05:52] "[35m[1mGET /api/get_enclosure?12=12 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:06:40] "[35m[1mGET /api/get_enclosure?=12 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:06:47] "[35m[1mGET /api/get_enclosure?12= HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:06:51] "[35m[1mGET /api/get_enclosure?12= HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [17/Jan/2023 11:06:55] "[35m[1mGET /api/get_enclosure?12= HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /api/animal [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 99, in add_animal
+    enclosure_name = cursor.execute(SELECT_ENCLOSURE, (id,))
+psycopg2.errors.UndefinedColumn: column "enclosure_id" does not exist
+LINE 1: SELECT enclosure_name FROM enclosures WHERE enclosure_id = 1...
+                                                    ^
+
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 10:54:58] "[35m[1mPOST /api/animal HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/animal [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 99, in add_animal
+    enclosure_name = cursor.execute(SELECT_ENCLOSURE, (id,))
+psycopg2.errors.UndefinedColumn: column "enclosure_id" does not exist
+LINE 1: SELECT enclosure_name FROM enclosures WHERE enclosure_id = 1...
+                                                    ^
+
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 10:55:03] "[35m[1mPOST /api/animal HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/animal [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 99, in add_animal
+    enclosure_name = cursor.execute(SELECT_ENCLOSURE, (id,))
+psycopg2.errors.UndefinedColumn: column "enclosure_id" does not exist
+LINE 1: SELECT enclosure_name FROM enclosures WHERE enclosure_id = 1...
+                                                    ^
+
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 10:55:12] "[35m[1mPOST /api/animal HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /api/animal [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 99, in add_animal
+    enclosure_name = cursor.execute(SELECT_ENCLOSURE, (id,))
+psycopg2.errors.UndefinedColumn: column "enclosure_id" does not exist
+LINE 1: SELECT enclosure_name FROM enclosures WHERE enclosure_id = 1...
+                                                    ^
+
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 10:55:58] "[35m[1mPOST /api/animal HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /api/animal [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 99, in add_animal
+    enclosure_name = cursor.execute(SELECT_ENCLOSURE, (enclosure_id))
+TypeError: 'int' object does not support indexing
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 10:56:51] "[35m[1mPOST /api/animal HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/animal [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 99, in add_animal
+    enclosure_name = cursor.execute(SELECT_ENCLOSURE, (enclosure_id))
+TypeError: 'int' object does not support indexing
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 10:56:59] "[35m[1mPOST /api/animal HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/animal [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 99, in add_animal
+    enclosure_name = cursor.execute(SELECT_ENCLOSURE, (enclosure_id))
+TypeError: 'int' object does not support indexing
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 10:57:00] "[35m[1mPOST /api/animal HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /api/animal [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 99, in add_animal
+    enclosure_id = cursor.fetchone()[0]
+psycopg2.ProgrammingError: no results to fetch
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 10:59:27] "[35m[1mPOST /api/animal HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/animal [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 99, in add_animal
+    enclosure_id = cursor.fetchone()[0]
+psycopg2.ProgrammingError: no results to fetch
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 10:59:27] "[35m[1mPOST /api/animal HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /api/animal [POST]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 99, in add_animal
+    enclosure_id = cursor.fetchone()[1]
+psycopg2.ProgrammingError: no results to fetch
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 10:59:56] "[35m[1mPOST /api/animal HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:INSERT INTO animals(animal_name, quantity, enclosure_id) VALUES (%s, %s, %s)
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:11:02] "[35m[1mPOST /api/animal HTTP/1.1[0m" 201 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:INSERT INTO animals(animal_name, quantity, enclosure_id) VALUES (%s, %s, %s)
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:11:49] "[35m[1mPOST /api/animal HTTP/1.1[0m" 201 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:13:44] "[35m[1mGET /api/get_enclosure?12= HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:13:46] "[35m[1mGET /api/get_enclosure?12= HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:13:52] "[35m[1mGET /api/get_enclosure?1= HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:13:55] "[35m[1mGET /api/get_enclosure?1=1 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:13:58] "[35m[1mGET /api/get_enclosure?=1 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:14:03] "[35m[1mGET /api/get_enclosure?1= HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:14:05] "[35m[1mGET /api/get_enclosure?12= HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:14:07] "[35m[1mGET /api/get_enclosure?13= HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:14:09] "[35m[1mGET /api/get_enclosure?13=13 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:root:INSERT INTO enclosures (enclosure_name) VALUES (%s) RETURNING id;
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:17:14] "[35m[1mPOST /api/enclosure HTTP/1.1[0m" 201 -
+INFO:root:INSERT INTO animals(animal_name, quantity, enclosure_id) VALUES (%s, %s, %s)
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:17:24] "[35m[1mPOST /api/animal HTTP/1.1[0m" 201 -
+ERROR:app:Exception on /api/get_enclosure [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+TypeError: create_app.<locals>.get_enclosure() missing 1 required positional argument: 'enclosure_id'
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:17:43] "[35m[1mGET /api/get_enclosure?=1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:20:18] "[33mGET /api/get_enclosure?=mammals HTTP/1.1[0m" 404 -
+ERROR:app:Exception on /api/get_enclosure/1 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 57, in get_enclosure
+    return f"enclosure id is : {enclosure[0]}, enclosure_name refers to {enclosure[1]}", 200
+TypeError: 'NoneType' object is not subscriptable
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:20:26] "[35m[1mGET /api/get_enclosure/1 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure/12 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 57, in get_enclosure
+    return f"enclosure id is : {enclosure[0]}, enclosure_name refers to {enclosure[1]}", 200
+IndexError: tuple index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:20:29] "[35m[1mGET /api/get_enclosure/12 HTTP/1.1[0m" 500 -
+ERROR:app:Exception on /api/get_enclosure/13 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 57, in get_enclosure
+    return f"enclosure id is : {enclosure[0]}, enclosure_name refers to {enclosure[1]}", 200
+IndexError: tuple index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:20:45] "[35m[1mGET /api/get_enclosure/13 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:app:Exception on /api/get_enclosure/13 [GET]
+Traceback (most recent call last):
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\venv\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\Nik\python-virtualenvironments\zoo-inventory\app.py", line 57, in get_enclosure
+    return f"enclosure id is : {enclosure[0]}, enclosure_name refers to {enclosure[1]}", 200
+IndexError: tuple index out of range
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:23:37] "[35m[1mGET /api/get_enclosure/13 HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:24:16] "GET /api/get_enclosure/13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:24:32] "GET /api/get_enclosure/13 HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [18/Jan/2023 11:27:55] "GET /api/get_animals/1 HTTP/1.1" 200 -
